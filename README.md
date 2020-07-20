@@ -3,6 +3,10 @@ Name
 データサイエンス100本ノック（構造化データ加工編）よりfork
 pythonのみ実施
 
+---
+
+# Tips
+
 ## dataframe
 ```python
 df.dtypes
@@ -72,7 +76,7 @@ preprocessing.scale(df['col1']) # 標準分散
 df.read_csv('data/in.csv')# その他パラメータは大体下と一緒
 pd.to_csv('data/out.csv', header=None, encoding='CP932') #初期値:header=True, encoding=utf-8, sep=','
 ```
-# Tips
+
 ## 正規表現
 ([0-9]{3}-[0-9]{4}-[0-9]{4}) #電話番号形式
 ^(?!abc) #abc以外から始まる
