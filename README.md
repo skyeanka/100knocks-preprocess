@@ -34,6 +34,9 @@ pd.merge(t1, t2, on='key1', how='inner')
 # how inner/left/right/outer
 # left_on/right_onで異なる列名をonする
 
+# 削除
+df.drop('Charlie', axis=1) # axis=0:行, 1;列
+
 # 抽出
 df[df['col1'] > 1] #boolean indexingで抽出
 df.query('col1 == "1"')#queryで抽出
