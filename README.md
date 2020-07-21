@@ -29,7 +29,7 @@ df[['now', 'col1']].apply(lambda x: relativedelta(x[0], x[1]).month, axis=1) # �
 # concat
 df.concat([df1, df2['col21']], axis=1) # axis 0:行追加, 1:列追加
 # join
-df.merge(t1, t2, on='key1', how='inner')
+pd.merge(t1, t2, on='key1', how='inner')
 # sql select相当はないので、結合テーブルでカラムを調整する
 # how inner/left/right/outer
 # left_on/right_onで異なる列名をonする
